@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruben Debbaudt</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class='container'>
+      <h2 class="text-center mt-2 mb-4">
+        Work experience
+      </h2>
+      <div>
+        <div>
+          {% for experience in experiences|reverse %}
+          {% include 'experience.html' %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

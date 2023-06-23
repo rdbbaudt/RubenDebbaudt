@@ -1,0 +1,17 @@
+<a href="/experience/{{experience['id']}}" class="text-reset text-decoration-none">
+  <div class="border-bottom row" style="margin-bottom:16px;padding-bottom:8px;">
+    <div class="col-6">
+      <h5 class="mb-0">{{experience['employer']}}</h5>
+  
+      <div class='mb-3'>
+        <b>Role:</b> {{experience['title']}}
+      </div>
+      <div class="col float-left d-md-none">
+        <p class="text-secondary">{{experience['timeframe']}}</p>
+      </div>
+    </div>
+    <div class="col-6 d-none d-md-block">
+      <p class="text-secondary text-end">{{experience['timeframe']}}</p>
+    </div>
+  </div>
+</a>

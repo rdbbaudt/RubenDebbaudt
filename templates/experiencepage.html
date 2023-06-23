@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruben Debbaudt - {{experience['title']}} @ {{experience['employer']}}</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class='container'>
+      <h2 class="text-center mt-2 mb-2">
+        {{experience['title']}} @ {{experience['employer']}}
+      </h2>
+      <div class='text-center mb-3'>
+      <small class="text-muted">{{experience['timeframe']}}</small>
+      </div>
+      <div class='mb-3'>
+      <b>Location:</b> {{experience['location']}}
+      </div>
+      <div class='mb-3'>
+      <b>Description:</b> {{experience['description']}}
+      </div>
+    </div>
+    <a type="button" 
+        class="btn btn-dark btn-block"
+        style="position:absolute; bottom:15px; left: 50%; transform: translateX(-50%);"
+        href="/">
+        Go Back
+      </a>
+  </body>
+</html>
